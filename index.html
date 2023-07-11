@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            function myStudent(){
+
+            }
+            // 1.  define the class
+            // class should always be writtern in pascalcase
+            class Oklabs{
+                //1. property:v
+                stu1='';
+                stu2='';
+                stu3='';
+                //2.  constructor
+                //constructor is like a special method
+                constructor(s1,s2,s3){
+                    //the role og constructor is to initialize the properties
+                    //left = right //  associativity of the operator
+                    this.stu1 = s1
+                    this.stu2 = s2
+                    this.stu3 = s3
+                    // this is an internal class object
+                }
+
+
+                //3. method/function
+                //define/defination
+                myStudent(){
+                    console.log("hello"+this.stu1+this.stu2+this.stu3);
+                }
+
+            }
+            // 2.   creat class Object
+            // let classObject = new ClassName();
+            // class  instantiation
+            let studets = new Oklabs("Ranu", 'pooja', `sanju`);  //parameters
+            //student is an external class object
+            // classObject.member
+            studets.myStudent();
+        </script>
+    </body>
+</html>
